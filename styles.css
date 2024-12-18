@@ -1,0 +1,118 @@
+body {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dad9d9;
+}
+main {
+  width: 393px;
+  height: 780px;
+  background-color: black;
+  border-radius: 55px;
+  opacity: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.4),
+    0 0 30px rgba(0, 0, 0, 0.6), 0 0 40px rgba(0, 0, 0, 0.8);
+}
+main img {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 22px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 392px;
+  height: 169px;
+  margin-top: 10px;
+}
+.operation {
+  display: flex;
+  width: 392px;
+  height: 83px;
+}
+.answer {
+  height: 86px;
+  width: 392px;
+}
+.operation h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+  width: 371px;
+  text-align: right;
+  font-size: 60px;
+  margin: 0;
+  font-weight: 400;
+  color: white;
+  overflow: hidden;
+}
+.answer h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+  width: 371px;
+  text-align: right;
+  font-size: 45px;
+  margin: 0;
+  font-weight: 300;
+  color: white;
+}
+.line {
+  width: 392px;
+  margin-top: 14px;
+  margin-bottom: 18px;
+}
+.buttons {
+  width: 393px;
+  height: 499px;
+  border-bottom-left-radius: 55px;
+  border-bottom-right-radius: 55px;
+}
+button {
+  width: 82px;
+  height: 82px;
+  font-size: 50px;
+  align-items: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+.button-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
+.align {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: skyblue;
+  color: #f9fff9;
+}
+.gap {
+  justify-content: center;
+  display: flex;
+  gap: 8px;
+}
+.spc {
+  background-color: #100b0b;
+  color: blue;
+  align-items: baseline;
+}
+.k12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+.ssp {
+  font-size: 40px;
+}
+button:hover {
+  transition: 0.4s ease-in-out;
+  background-color: #100b0b;
+  color: blue;
+  transform: translateY(-2px);
+}

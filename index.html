@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="fonts.css" />
+  <script src="../src/script.js"></script>
+</head>
+
+<body>
+  <main>
+    <img src="../imgs/Icons.png" alt="" />
+    <div class="container">
+      <div class="operation">
+        <h1></h1>
+      </div>
+      <div class="answer">
+        <h1></h1>
+      </div>
+    </div>
+    <div>
+      
+    </div>
+    <div class="line"></div>
+    <div class="buttons">
+      <div class="button-layout">
+        <div class="first-row gap">
+          <button onclick="document.querySelector('.operation h1').innerHTML = ''"
+            ondblclick="document.querySelector('.answer h1').innerHTML = ''" class="align spc k12">
+            C
+          </button>
+          <button class="align spc k12">()</button>
+          <button class="align spc k12">%</button>
+          <button onclick="document.querySelector('.operation h1').innerHTML += '/'" class="align spc">
+            ÷
+          </button>
+        </div>
+        <div class="second-row gap">
+          <button onclick="document.querySelector('.operation h1').innerHTML += '7'" class="align">
+            7
+          </button>
+          <button onclick="document.querySelector('.operation h1').innerHTML += '8'" class="align">
+            8
+          </button>
+          <button onclick="document.querySelector('.operation h1').innerHTML += '9'" class="align">
+            9
+          </button>
+          <button onclick="document.querySelector('.operation h1').innerHTML += '*'" class="align spc">
+            x
+          </button>
+        </div>
+        <div class="third-row gap">
+          <button onclick="document.querySelector('.operation h1').innerHTML += '4'" class="align">
+            4
+          </button>
+          <button onclick="document.querySelector('.operation h1').innerHTML += '5'" class="align">
+            5
+          </button>
+          <button onclick="document.querySelector('.operation h1').innerHTML += '6'" class="align">
+            6
+          </button>
+          <button onclick="document.querySelector('.operation h1').innerHTML += '-'" class="align spc">
+            -
+          </button>
+        </div>
+        <div class="fourth-row gap">
+          <button onclick="document.querySelector('.operation h1').innerHTML += '1'" class="align">
+            1
+          </button>
+          <button onclick="document.querySelector('.operation h1').innerHTML += '2'" class="align">
+            2
+          </button>
+          <button onclick="document.querySelector('.operation h1').innerHTML += '3'" class="align">
+            3
+          </button>
+          <button onclick="document.querySelector('.operation h1').innerHTML += '+'" class="align spc">
+            +
+          </button>
+        </div>
+        <div class="fifth-row gap">
+          <button
+            onclick="document.querySelector('.operation h1').innerHTML = document.querySelector('.operation h1').innerHTML.toString().slice(0, -1)"
+            class="align ssp spc k12">
+            DE
+          </button>
+          <button onclick="document.querySelector('.operation h1').innerHTML += '0'" class="align">
+            0
+          </button>
+          <button onclick="document.querySelector('.operation h1').innerHTML += '.'" class="align">
+            .
+          </button>
+          <button
+            onclick="document.querySelector('.answer h1').innerHTML = eval(document.querySelector('.operation h1').innerHTML)"
+            ondblclick="document.querySelector('.operation h1').innerHTML = document.querySelector('.answer h1').innerHTML"
+            class="align spc">
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+  </div>
+</body>
+
+</html>
